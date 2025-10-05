@@ -1,0 +1,137 @@
+<html>
+    <head>
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            color: #333;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2b3a55;
+        }
+
+        form {
+            background-color: #fff;
+            width: 60%;
+            margin: 0 auto;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #2b3a55;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"], select, textarea {
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #2b3a55;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1f2a3c;
+        }
+    </style>
+</head>
+    <body>
+        <h1>CONTACT FORM</h1>
+        <form action="D:\CODING\html,cssswllab\formdata.html">
+            <fieldset>
+                <legend>Details</legend>
+                <label for="firstname">First Name:</label><br>
+                <input type="text" id="firstname" name="firstname" required > <br><br>
+                <label for="lastname">Last Name:</label><br>
+                <input type="text" id="lastname" name="lastname" required > <br><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" required > <br><br>
+
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>College Details</legend>
+                <br>
+                <label for="cname">College Name(shortform,city):</label><br>
+                <input type="text" id="cname" name="email" required><br>
+
+
+                <label for="branch">Branch Name(shortform):</label><br>
+                <select name="branch" id="branch">
+                    <option value="cse">CSE</option>
+                    <option value="cse">ECE</option>
+                    <option value="cse">EEE</option>
+                    <option value="cse">MECH</option>
+                    <option value="cse">CIV</option>
+                    <option value="cse">MME</option>
+                    <option value="cse">MIN</option>
+                </select>
+                <br>
+
+
+
+
+                <label for="year">Year:</label><br>
+                <input type="radio" id="1st" name="year" value="1st" >
+                <label for="1st">1st</label><br>
+                <input type="radio" id="2nd" name="year" value="2nd" checked>
+                <label for="2nd">2nd</label><br>
+                <input type="radio" id="3rd" name="year" value="3rd">
+                <label for="3rd">3rd</label><br>
+                <input type="radio" id="4th" name="year" value="4th">
+                <label for="4th">4th</label><br>
+            </fieldset>
+            <br>
+           <fieldset>
+            <legend>PURPOSE
+            </legend>
+            
+           <textarea name="purpose" id="purpose" rows="6" cols="50" placeholder="Write your purpose here..."></textarea>
+
+           </fieldset>
+        <br>
+        <input type="submit" value="Submit Details">
+
+
+        </form>
+    </body>
+</html>

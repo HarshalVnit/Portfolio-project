@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Contact Form</title>
+    </head>
+    <body>
+        <h1>CONTACT FORM</h1>
+        <form action="D:\CODING\html,cssswllab\formdata.html">
+            <fieldset>
+                <legend>Details</legend>
+                <label for="firstname">First Name:</label><br>
+                <input type="text" id="firstname" name="firstname" required > <br><br>
+                <label for="lastname">Last Name:</label><br>
+                <input type="text" id="lastname" name="lastname" required > <br><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" required > <br><br>
+
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>College Details</legend>
+                <br>
+                <label for="cname">College Name(shortform,city):</label><br>
+                <input type="text" id="cname" name="email" required><br>
+
+
+                <label for="branch">Branch Name(shortform):</label><br>
+                <select name="branch" id="branch">
+                    <option value="cse">CSE</option>
+                    <option value="cse">ECE</option>
+                    <option value="cse">EEE</option>
+                    <option value="cse">MECH</option>
+                    <option value="cse">CIV</option>
+                    <option value="cse">MME</option>
+                    <option value="cse">MIN</option>
+                </select>
+                <br>
+
+
+
+
+                <label for="year">Year:</label><br>
+                <input type="radio" id="1st" name="year" value="1st" >
+                <label for="1st">1st</label><br>
+                <input type="radio" id="2nd" name="year" value="2nd" checked>
+                <label for="2nd">2nd</label><br>
+                <input type="radio" id="3rd" name="year" value="3rd">
+                <label for="3rd">3rd</label><br>
+                <input type="radio" id="4th" name="year" value="4th">
+                <label for="4th">4th</label><br>
+            </fieldset>
+            <br>
+           <fieldset>
+            <legend>PURPOSE
+            </legend>
+            
+           <textarea name="purpose" id="purpose" rows="6" cols="50" placeholder="Write your purpose here..."></textarea>
+
+           </fieldset>
+        <br>
+        <input type="submit" value="Submit Details">
+
+
+        </form>
+    </body>
+</html>

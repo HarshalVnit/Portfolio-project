@@ -1,0 +1,68 @@
+ok this is my curent css for about page
+table {
+            border-collapse: collapse;
+            width: 80%; /* table width, can use 100% to fill fully */
+            max-width: 1000px;
+          margin: 20px auto;
+            background-color: #5a6ff0; /* table background */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* subtle shadow */
+        }
+
+        th, td {
+            border: 2px solid #00ffbf; /* border color */
+            padding: 12px 20px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #5a6ff0; /* darker header */
+            color: white;
+            font-size: 18px;
+        }
+
+        td {
+            color: white;
+        }
+
+        .para{
+            font-size: 20px;
+            color: black;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+
+        h1 {
+  color: #004080;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 5px;
+}
+
+h2 {
+  color: #0066cc;
+  margin-top: 15px;
+}
+
+p {
+  background-color: #fff;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 20px;   /* Increased font size */
+  line-height: 1.8;  /* Better spacing between lines */
+  
+}
+
+ul, ol {
+  background-color: #fff;
+  padding: 15px 25px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  width: fit-content;
+}
+
+li {
+  margin: 5px 0;
+}
+
+
+ 
