@@ -14,17 +14,18 @@
             color: #2b3a55;
         }
 
-        form {
+        form {  
             background-color: #fff;
             width: 60%;
             margin: 0 auto;
             padding: 25px;
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            /* box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
+            box-shadow: #2b3a55;
         }
 
         fieldset {
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             border-radius: 5px;
             margin-bottom: 20px;
             padding: 15px;
@@ -54,9 +55,9 @@
             resize: none;
         }
 
-        input[type="radio"] {
+        /* input[type="radio"] {
             margin-right: 5px;
-        }
+        } */
 
         input[type="submit"] {
             background-color: #2b3a55;
@@ -74,16 +75,30 @@
     </style>
 </head>
     <body>
+        <div class="nav_bar">
+   <div class="logo">My Portfolio</div>
+   <div class="menu">
+       <a href="index.html" target="_self">Home</a>
+       <a href="about.html" target="_self">About</a>
+       <a href="skills.html"target="_self">Skills</a>
+       <a href="projects.html" target="_self">Projects</a>
+       <a href="contact.html" target="_self">Contact</a>
+       <button id="dark-mode-toggle">🌙</button> 
+   </div>
+</div>
         <h1>CONTACT FORM</h1>
-        <form action="D:\CODING\html,cssswllab\formdata.html">
+<!-- <form action="thankyou.html" method="get">
+     -->
+    <form id="contact-form">
             <fieldset>
                 <legend>Details</legend>
                 <label for="firstname">First Name:</label><br>
                 <input type="text" id="firstname" name="firstname" required > <br><br>
+                <!-- for and id are linked for firstname so when u clickon label in page it wil direct to first name input box and that nam=" " is key of inout value wih will go in databases -->
                 <label for="lastname">Last Name:</label><br>
                 <input type="text" id="lastname" name="lastname" required > <br><br>
                 <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email" required > <br><br>
+                <input type="email" id="email" name="email" required > <br><br>
 
 
             </fieldset>
@@ -92,18 +107,19 @@
                 <legend>College Details</legend>
                 <br>
                 <label for="cname">College Name(shortform,city):</label><br>
-                <input type="text" id="cname" name="email" required><br>
+                <input type="text" id="cname" name="collegeName" required><br>
 
 
                 <label for="branch">Branch Name(shortform):</label><br>
-                <select name="branch" id="branch">
-                    <option value="cse">CSE</option>
-                    <option value="cse">ECE</option>
-                    <option value="cse">EEE</option>
-                    <option value="cse">MECH</option>
-                    <option value="cse">CIV</option>
-                    <option value="cse">MME</option>
-                    <option value="cse">MIN</option>
+                 <select name="branch" id="branch">
+                 <option value="cse">CSE</option>
+                 <option value="ece">ECE</option>
+                 <option value="eee">EEE</option>
+                 <option value="mech">MECH</option>
+                 <option value="civ">CIV</option>
+                 <option value="mme">MME</option>
+                 <option value="min">MIN</option>
+
                 </select>
                 <br>
 
@@ -122,16 +138,17 @@
             </fieldset>
             <br>
            <fieldset>
-            <legend>PURPOSE
-            </legend>
+            <legend>PURPOSE</legend>
             
            <textarea name="purpose" id="purpose" rows="6" cols="50" placeholder="Write your purpose here..."></textarea>
 
            </fieldset>
         <br>
         <input type="submit" value="Submit Details">
+          <!-- <button type="submit" class="submit-btn">Submit Survey</button> -->
 
 
         </form>
+        <script src="script.js"></script>
     </body>
 </html>

@@ -1,36 +1,39 @@
 
-.center{
+.center
+{
     text-align:center;
-    color: white;
+    color: rgb(4, 1, 17);
+    
 }
-body {
-    margin: 0;
-}
+
 .intro {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px; /* space between image and text */
+   gap: 40px;
   margin-top: 40px;
 }
 
-.p1 {
+/* .p1 {
   text-align: left;
   max-width: 600px;
   font-size: 18px;
-  line-height: 1.5;
-}
+  line-height: 1.8;
+} */
 
 
 
-.navbar {
-    background-color: #5a6ff0; /* bluish background */
-    overflow: hidden;         /* keeps everything inside */
-    padding: 20px;
+.nav_bar {
+  display: flex;                
+  justify-content: space-between;
+   align-items: center;          
+  background-color: #5a6ff0;  
+  overflow: hidden;    
+  padding: 20px;
 }
 
 .logo {
-    float: left;
+    /* float: left; no need as flex is used */
     color: white;
     font-weight: bold;
     font-size: 30px;
@@ -40,9 +43,9 @@ body {
     text-align:center;
 }
 
-.menu {
+/* .menu {
     float: right;
-}
+} */
 
 .menu a {
     text-decoration: none;
@@ -62,6 +65,7 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
   background: linear-gradient(to right, #e0eafc, #cfdef3); /* soft blue gradient */
   color: #333;
+  /* //dark gray colour for text */
   margin: 30px;
   line-height: 1.6;
 }
@@ -84,28 +88,28 @@ h2 {
 p {
   background-color: #ffffff;
   padding: 16px 20px;
-  border-radius: 10px;
+  border-radius: 50px;
   font-size: 20px;
   line-height: 1.8;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
   max-width: 900px;
   margin: 15px auto;
 }
 
 /* Table styling */
 table {
-  border-collapse: collapse;
-  width: 80%;
+  border-collapse: collapse;  /*merges adjacent table borders.*/
+  
   max-width: 1000px;
-  margin: 30px auto;
+  margin: 30px auto; /* centers table */
   background-color: #4c5fd7; /* soft blue */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  
   border-radius: 10px;
   overflow: hidden;
 }
 
 th, td {
-  border: 1px solid #00e6b8;
+  border: 1.5px solid #33f8d0;
   padding: 14px 22px;
   text-align: center;
 }
@@ -120,24 +124,21 @@ td {
   color: #fff;
 }
 
-/* Table hover effect */
-tr:hover {
-  background-color: #6377f3;
-  transition: 0.2s;
-}
+
 
 /* Lists */
 ul, ol {
-  background-color: #fff;
-  padding: 15px 25px;
+  background-color: #ffffff;
+  padding: 15px 50px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-size-adjust: 20px;
   width: fit-content;
-  margin: 20px auto;
+  max-width: 1000;
+  margin: 10px auto ;/*first 10px is top and bottom margin, auto is left and right margin */
 }
 
 li {
-  margin: 8px 0;
+  margin: 18px ;
 }
 
 /* Paragraph with custom class */
@@ -155,4 +156,137 @@ h1, h2, table, p, ul, ol {
 }
 
 
+/* had to make this footer text as follows to override my global p css */
+.footer-text {
+  font-size: 16px;          /* smaller than main page p */
+  color: #c9d1d9;           /* light gray */
+  margin: 0;                  /* remove p default margin */
+  padding: 0;                 /* remove p padding from global p */
+  background: none;           /* override global p background */
+  border-radius: 0;           /* remove rounded corners */
+  max-width: 100%;            /* full width */
+}
 
+footer {
+  background-color: #0d1117; /* dark GitHub-like theme */
+  color: #c9d1d9;
+  text-align: center;
+  padding: 20px ; /* more space around footer */
+  font-size: 14px;
+  margin-top: 50px; /*extra spacing from my photo above */
+}
+
+.social-links {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.social-links a {
+  color: #00bcd4;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  /* transition: color 0.3s, transform 0.3s; */
+}
+
+.social-links a:hover {
+  color: #ff4081;
+ 
+}
+
+
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: #5a6ff0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+
+
+/* //later added
+ */
+/* ========================================
+   DARK MODE STYLES
+   ======================================== */
+
+/* ========================================
+   DARK MODE STYLES
+   ======================================== */
+
+/* This is the class our JavaScript adds to the body */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+body.dark-mode .nav_bar {
+    background-color: #2b2b2b;
+}
+
+body.dark-mode .menu a {
+    color: #ffffff;
+}
+
+body.dark-mode .menu a:hover {
+    color: #5a6ff0;
+}
+
+body.dark-mode h1,
+body.dark-mode h2 {
+    color: #5a6ff0;
+}
+
+body.dark-mode table {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border-color: #555;
+}
+
+body.dark-mode th {
+    background-color: #333;
+    color: #5a6ff0;
+}
+
+body.dark-mode td {
+    border-color: #555;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode textarea,
+body.dark-mode select {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+body.dark-mode fieldset {
+    border-color: #555;
+}
+
+body.dark-mode legend {
+    color: #5a6ff0;
+}
+
+body.dark-mode form {
+    background-color: #2b2b2b;
+}
+
+body.dark-mode footer {
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+body.dark-mode .intro {
+    background-color: #2b2b2b;
+}
+
+/* General fix for all paragraphs in dark mode */
+body.dark-mode p {
+    color: #e0e0e0; /* A light grey/white color */
+}
