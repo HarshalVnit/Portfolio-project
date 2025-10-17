@@ -1,10 +1,7 @@
 // Wait for the HTML page to be fully loaded before running any script
 document.addEventListener('DOMContentLoaded', function() {
 
-    // ==========================================
-    // 1. HOME PAGE TYPING ANIMATION
-    // ==========================================
-    // This function will only run on the index.html page.
+  
     function initTypeWriter() {
         // We target the h1 with the class "typing-text"
         const h1Element = document.querySelector('h1.typing-text');
@@ -25,10 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // ==========================================
-    // 2. DARK MODE TOGGLE
-    // ==========================================
-    // This will work on any page that has the toggle button.
+   
     function initDarkModeToggle() {
         const toggleBtn = document.getElementById('dark-mode-toggle');
         const body = document.body;
@@ -56,10 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // ==========================================
-    // 3. FORM VALIDATION & SAVING
-    // ==========================================
-    // This function will only run on the contact.html page.
+    
     function initContactForm() {
         // We target the form with the ID "contact-form"
         const contactForm = document.getElementById('contact-form');
@@ -98,10 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // ==========================================
-    // 4. DISPLAY SUBMISSION ON THANK YOU PAGE
-    // ==========================================
-    // This will only run on the thankyou.html page.
+
     function displayThankYouData() {
         // We target the div with the ID "submission-display"
         const displayArea = document.getElementById('submission-display');
@@ -124,9 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // ==========================================
     // INITIALIZE ALL FUNCTIONS
-    // ==========================================
     initTypeWriter();
     initDarkModeToggle();
     initContactForm();
